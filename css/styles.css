@@ -22,6 +22,8 @@ ul {
   list-style: none;
 }
 
+.container
+
 /* Logo */
 .logo {
   color: var(--first-logo-color);
