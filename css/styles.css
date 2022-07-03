@@ -164,6 +164,7 @@ img {
   margin-right: 30px;
 }
 .heading-benefits {
+  padding-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -171,6 +172,7 @@ img {
   text-transform: uppercase;
 }
 .subtitle-benefits {
+  width: 270px;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -300,13 +302,16 @@ img {
 /* (nth-last-child(-n + 3)) */
 
 .btn {
+  padding: 6px 22px;
   font: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
   text-align: center;
   letter-spacing: 0.03em;
+  border-radius: 4px;
   background-color: var(--btn-bgr-color);
+  border: none;
   color: var(--primary-text-color);
   cursor: pointer;
 }
