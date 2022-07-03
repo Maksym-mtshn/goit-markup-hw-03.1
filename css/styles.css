@@ -94,6 +94,7 @@ img {
 
 .header-container {
   display: flex;
+  border-bottom: 1px solid #ececec;
 }
 .link:focus,
 .link:hover {
