@@ -152,6 +152,17 @@ img {
 }
 
 /* section переваги компанії */
+.container-benefits {
+  display: flex;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.benefits-list {
+  display: flex;
+}
+.benefits-item:not(:last-child) {
+  margin-right: 30px;
+}
 .heading-benefits {
   font-weight: 700;
   font-size: 14px;
@@ -167,6 +178,18 @@ img {
 }
 
 /* section Чим ми займаємось */
+.projects-container {
+  padding-bottom: 94px;
+}
+.projects-tite {
+  margin-bottom: 50px;
+}
+.projects-list {
+  display: flex;
+}
+.projects-img:not(:last-child) {
+  margin-right: 30px;
+}
 .title {
   font-weight: 700;
   font-size: 36px;
@@ -176,6 +199,19 @@ img {
 }
 
 /* section Наша команда */
+.title-team {
+  padding-top: 94px;
+  padding-bottom: 50px;
+}
+.list-team {
+  display: flex;
+  padding-bottom: 94px;
+}
+
+.team-items:not(:last-child) {
+  margin-right: 30px;
+}
+
 .section-team {
   background: var(--btn-bgr-color);
 }
@@ -197,9 +233,18 @@ img {
 .futer-logo-span {
   color: var(--slogan-text-color);
 }
-footer {
+.footer {
   background: var(--primary-bg-color);
   color: var(--slogan-text-color);
+}
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.footer-logo {
+  padding-bottom: 20px;
 }
 .footer-link {
   color: var(--link-address-color);
@@ -223,6 +268,37 @@ footer {
 }
 
 /* portfolio */
+
+.container-portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 2070px;
+  justify-content: center;
+}
+
+.projects-list {
+  display: flex;
+  justify-content: center;
+  padding-top: 94px;
+  padding-bottom: 50px;
+}
+.projects-btn:not(:last-child) {
+  margin-right: 8px;
+}
+.list-portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 94px;
+}
+.portfolio-item:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
+.portfolio-item:nth-last-child(n + 4) {
+  margin-bottom: 30px;
+}
+/* :nth-child(3n + 3)  */
+/* (nth-last-child(-n + 3)) */
+
 .btn {
   font: inherit;
   font-weight: 500;
@@ -244,6 +320,8 @@ footer {
   color: var(--slogan-text-color);
 }
 .portfolio-title {
+  margin-top: 40px;
+  margin-bottom: 4px;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
