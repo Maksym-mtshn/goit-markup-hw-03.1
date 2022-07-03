@@ -276,7 +276,10 @@ img {
   flex-basis: 2070px;
   justify-content: center;
 }
-
+.portfolio-border {
+  padding: 20px 24px;
+  border: 1px solid #eeeeee;
+}
 .projects-list {
   display: flex;
   justify-content: center;
@@ -291,6 +294,7 @@ img {
   flex-wrap: wrap;
   padding-bottom: 94px;
 }
+
 .portfolio-item:not(:nth-child(3n)) {
   margin-right: 30px;
 }
@@ -324,8 +328,6 @@ img {
   color: var(--slogan-text-color);
 }
 .portfolio-title {
-  margin-top: 40px;
-  margin-bottom: 4px;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
