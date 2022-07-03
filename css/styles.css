@@ -18,13 +18,44 @@ body {
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
 }
-ul {
-  list-style: none;
+
+/* reset */
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
-.container
+/* common styles start */
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+
+  outline: 1px solid red;
+}
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
 
 /* Logo */
+.header-logo {
+  margin-right: 93px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
 .logo {
   color: var(--first-logo-color);
   font-family: Raleway, sans-serif;
@@ -39,10 +70,33 @@ ul {
 }
 
 /* Основна навігація */
+
+.site-nav-item:not(:last-child) {
+  margin-right: 50px;
+}
+.auth-nav-item:not(:last-child) {
+  margin-right: 50px;
+}
+
 .site-nav .auth-nav {
   color: var(--title-text-color);
 }
+.site-nav {
+  display: flex;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
 
+.auth-nav {
+  display: flex;
+  margin-left: auto;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.header-container {
+  display: flex;
+}
 .link:focus,
 .link:hover {
   color: var(--accent-color);
@@ -61,6 +115,9 @@ ul {
   background: var(--primary-bg-color);
 }
 .hero-title {
+  padding-top: 200px;
+  padding-bottom: 30px;
+
   color: var(--slogan-text-color);
   font-weight: 900;
   font-size: 44px;
@@ -70,6 +127,11 @@ ul {
   text-transform: uppercase;
 }
 .button {
+  /* margin-top: 30px;
+  margin-bottom: 200px;
+  margin: 0 auto;
+  display: block;*/
+
   font: inherit;
   color: var(--slogan-text-color);
   background-color: var(--accent-color);
@@ -78,6 +140,11 @@ ul {
   line-height: 1.8;
   letter-spacing: 0.06em;
   cursor: pointer;
+}
+.btn-hero {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 200px;
 }
 .button:focus,
 .button:hover {
