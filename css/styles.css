@@ -219,10 +219,12 @@ img {
 
 .list-team {
   display: flex;
+  flex-wrap: wrap;
+  margin: calc(-1 * var(--indent) / 2);
 }
-
-.team-items:not(:last-child) {
-  margin-right: 30px;
+.team-items {
+  flex-basis: calc((100% - var(--indent) * 4) / 4);
+  margin: calc(var(--indent) / 2);
   background: var(--slogan-text-color);
 }
 
