@@ -127,8 +127,11 @@ img {
 .hero {
   background: var(--primary-bg-color);
 }
-.hero-title {
+.hero-container {
   padding-top: 200px;
+  padding-bottom: 200px;
+}
+.hero-title {
   padding-bottom: 30px;
 
   color: var(--slogan-text-color);
@@ -139,12 +142,11 @@ img {
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
+.btn-hero {
+  display: flex;
+  justify-content: center;
+}
 .button {
-  /* margin-top: 30px;
-  margin-bottom: 200px;
-  margin: 0 auto;
-  display: block;*/
-
   font: inherit;
   color: var(--slogan-text-color);
   background-color: var(--accent-color);
@@ -154,10 +156,15 @@ img {
   letter-spacing: 0.06em;
   cursor: pointer;
 }
-.btn-hero {
-  display: flex;
-  justify-content: center;
-  padding-bottom: 200px;
+.hero-button {
+  width: 200px;
+  height: 50px;
+  font: inherit;
+  color: #ffffff;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  cursor: pointer;
 }
 .button:focus,
 .button:hover {
