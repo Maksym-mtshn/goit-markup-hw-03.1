@@ -292,6 +292,7 @@ img {
 /* portfolio */
 
 .portfolio-section {
+  padding-top: 94px;
   padding-bottom: 94px;
 }
 .btn {
@@ -324,10 +325,9 @@ img {
   flex-basis: 2070px;
   justify-content: center;
 }
-.portfolio-list {
+.portfolio-list-btn {
   display: flex;
   justify-content: center;
-  padding-top: 94px;
   padding-bottom: 50px;
 }
 
