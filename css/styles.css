@@ -289,6 +289,9 @@ img {
 
 /* portfolio */
 
+.portfolio-section {
+  padding-bottom: 94px;
+}
 .btn {
   padding: 6px 22px;
   font: inherit;
@@ -325,18 +328,17 @@ img {
   padding-top: 94px;
   padding-bottom: 50px;
 }
+
 .list-portfolio {
   display: flex;
   flex-wrap: wrap;
-  padding-bottom: 94px;
+  margin: calc(-1 * var(--indent) / 2);
+}
+.portfolio-item {
+  flex-basis: calc((100% - var(--indent) * var(--items)) / var(--items));
+  margin: calc(var(--indent) / 2);
 }
 
-.portfolio-item:not(:nth-child(3n)) {
-  margin-right: 30px;
-}
-.portfolio-item:nth-last-child(n + 4) {
-  margin-bottom: 30px;
-}
 .portfolio-border {
   padding: 20px 24px;
   border: 1px solid #eeeeee;
