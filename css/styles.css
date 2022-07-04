@@ -165,10 +165,10 @@ img {
 }
 
 /* section переваги компанії */
-.container-benefits {
-  display: flex;
+.section-benefits {
   padding-top: 94px;
   padding-bottom: 94px;
+  display: flex;
 }
 .benefits-list {
   display: flex;
