@@ -82,6 +82,9 @@ img {
 }
 
 /* Основна навігація */
+.header {
+  border-bottom: 1px solid #ececec;
+}
 
 .site-nav-item:not(:last-child) {
   margin-right: 50px;
@@ -95,20 +98,15 @@ img {
 }
 .site-nav {
   display: flex;
-  padding-top: 32px;
-  padding-bottom: 32px;
 }
 
 .auth-nav {
   display: flex;
   margin-left: auto;
-  padding-top: 32px;
-  padding-bottom: 32px;
 }
 
 .header-container {
   display: flex;
-  border-bottom: 1px solid #ececec;
 }
 .link:focus,
 .link:hover {
@@ -119,21 +117,23 @@ img {
 }
 .link {
   font-size: 14px;
+  font-weight: 500;
+  padding-top: 32px;
+  padding-bottom: 32px;
   color: var(--primary-text-color);
   text-decoration: none;
+  display: block;
 }
 
 /* Секція Hero */
 .hero {
   background: var(--primary-bg-color);
-}
-.hero-container {
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding: 200px 0;
 }
 .hero-title {
-  padding-bottom: 30px;
-
+  max-width: 650px;
+  margin: 0 auto;
+  margin-bottom: 30px;
   color: var(--slogan-text-color);
   font-weight: 900;
   font-size: 44px;
@@ -152,6 +152,7 @@ img {
   background-color: var(--accent-color);
   font-weight: 700;
   font-size: 16px;
+  padding: 10px 32px;
   line-height: 1.8;
   letter-spacing: 0.06em;
   cursor: pointer;
@@ -336,7 +337,7 @@ img {
 .portfolio-list-btn {
   display: flex;
   justify-content: center;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .list-portfolio {
