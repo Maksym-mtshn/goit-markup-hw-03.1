@@ -61,7 +61,7 @@ img {
   margin: 0;
   padding: 0;
 }
-
+/* HEADER */
 /* Logo */
 .header-logo {
   margin-right: 93px;
@@ -93,9 +93,6 @@ img {
   margin-right: 50px;
 }
 
-.site-nav .auth-nav {
-  color: var(--title-text-color);
-}
 .site-nav {
   display: flex;
 }
@@ -124,6 +121,9 @@ img {
   text-decoration: none;
   display: block;
 }
+.link-nav {
+  color: var(--title-text-color);
+}
 
 /* Секція Hero */
 .hero {
@@ -146,31 +146,23 @@ img {
   display: flex;
   justify-content: center;
 }
+.button:focus,
+.button:hover {
+  background-color: var(--button-background-color);
+}
 .button {
   font: inherit;
   color: var(--slogan-text-color);
   background-color: var(--accent-color);
-  font-weight: 700;
+  font-weight: bold;
   font-size: 16px;
   padding: 10px 32px;
   line-height: 1.8;
   letter-spacing: 0.06em;
-  cursor: pointer;
-}
-.hero-button {
-  width: 200px;
-  height: 50px;
-  font: inherit;
-  color: #ffffff;
-  background: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  cursor: pointer;
   border: none;
-}
-.button:focus,
-.button:hover {
-  background-color: var(--button-background-color);
+  cursor: pointer;
 }
 
 /* section переваги компанії */
@@ -239,11 +231,13 @@ img {
 
 .team-card {
   padding-top: 30px;
+  padding-bottom: 30px;
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 .team-title {
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
@@ -251,8 +245,6 @@ img {
   letter-spacing: 0.03em;
 }
 .team-subtitle {
-  padding-top: 10px;
-  padding-bottom: 30px;
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
@@ -361,6 +353,7 @@ img {
 }
 
 .portfolio-title {
+  margin-bottom: 4px;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
